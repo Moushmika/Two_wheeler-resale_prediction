@@ -1,12 +1,12 @@
-**Predicting Two-Wheeler Resale Value Using Machine Learning**
+# **🚀Predicting Two-Wheeler Resale Value Using Machine Learning**
 
 A machine learning case study for predicting the resale value of used two-wheelers using historical motorcycle marketplace data and Multiple Linear Regression.
 
-**📌 Problem Statement**
+## **📌 Problem Statement**
 Determining a fair resale price for a used motorcycle is challenging because price depends on factors such as vehicle age, kilometers driven, ownership history, brand, seller type, and original ex-showroom price.
 This project develops a data-driven pricing model to estimate a reasonable resale value and support sellers, buyers, and used-bike marketplaces in making better pricing decisions.
 
-**🎯 Objectives**
+## **🎯 Objectives**
 
 Analyze factors influencing two-wheeler resale prices.
 Perform data cleaning and exploratory data analysis.
@@ -16,18 +16,18 @@ Evaluate the model using R², MAE, and RMSE.
 Perform residual analysis and hypothesis testing.
 Extract practical business insights.
 
-**📊 Dataset**
+## **📊 Dataset**
 
 The project uses the BIKE DETAILS dataset containing 1,061 motorcycle records.
 Feature
 Description
 Name
 Motorcycle name
-selling_price
+Selling_price
 Used-bike selling price — target variable
-year
+Year
 Manufacturing year
-seller_type
+Seller_type
 Type of seller
 owner
 Ownership category
@@ -37,9 +37,9 @@ ex_showroom_price
 Original ex-showroom price
 Engineered Features
 bike_age — calculated from the manufacturing year.
-brand — extracted from the motorcycle name.
+Brand — extracted from the motorcycle name.
 
-**🛠️ Technologies Used**
+## **🛠️ Technologies Used**
 
 Python
 Google Colab 
@@ -50,7 +50,7 @@ Seaborn
 Scikit-learn
 SciPy
 
-**🔄 Methodology**
+## **🔄 Methodology**
 
 Dataset Collection
        ↓
@@ -78,7 +78,7 @@ Hypothesis Testing
        ↓
 Business Insights
 
-**🔧 Data Preparation**
+## **🔧 Data Preparation**
 
 Loaded and inspected the dataset.
 Checked dimensions, data types, and missing values.
@@ -88,14 +88,14 @@ Extracted brand from the name column.
 Applied One-Hot Encoding to categorical variables.
 Split the data into 80% training and 20% testing sets.
 
-**📈 Exploratory Data Analysis**
+## **📈 Exploratory Data Analysis**
 
 EDA included selling-price distributions, boxplots, correlation analysis, brand-wise analysis, and residual/actual-vs-predicted visualizations.
 Key Correlations
 Feature
 Correlation with Selling Price
 
-**🤖 Machine Learning Model**
+## **🤖 Machine Learning Model**
 
 Multiple Linear Regression
 Multiple Linear Regression was selected because the target variable, selling_price, is continuous and the model provides an interpretable relationship between the predictors and resale price.
@@ -109,7 +109,7 @@ Brand
 Ex-showroom price
 Categorical variables were processed using OneHotEncoder within a Scikit-learn pipeline.
 
-**📊 Model Performance**
+## **📊 Model Performance**
 
 Metric
 Result
@@ -122,7 +122,7 @@ R² = 0.807: Approximately 80.7% of resale-price variation is explained by the m
 MAE = ₹16,192: Average absolute prediction error is approximately ₹16,192.
 RMSE = ₹22,545: Larger prediction errors have a stronger effect on this metric.
 
-**🧪 Statistical Analysis**
+## **🧪 Statistical Analysis**
 
 A hypothesis test was conducted to examine whether Royal Enfield and Bajaj motorcycles have significantly different selling prices.
 H₀: There is no significant difference between the groups.
@@ -131,7 +131,7 @@ T-statistic: 21.96
 P-value: 7.35 × 10⁻⁶⁹
 Since the p-value is far below 0.05, H₀ is rejected, indicating a statistically significant difference between the groups in this dataset.
 
-**💡 Key Findings**
+## **💡 Key Findings**
 
 Ex-showroom price is the strongest predictor of resale value.
 Older motorcycles generally have lower resale prices.
@@ -139,7 +139,7 @@ Higher kilometers driven is associated with lower resale value.
 The model achieved an R² of 0.807 on the test data.
 Brand differences show a statistically significant association with selling price.
 
-**💼 Business Value**
+## **💼 Business Value**
 
 The model can help used-bike marketplaces.
 Provide data-driven price recommendations.
@@ -148,7 +148,7 @@ Help sellers set competitive listing prices.
 Help buyers evaluate fair market prices.
 Improve consistency in automated vehicle valuation.
 
-**🚀 Future Improvements**
+## **🚀 Future Improvements**
 
 Future versions can incorporate:
 	Vehicle condition
@@ -160,7 +160,7 @@ Future versions can incorporate:
 	Model-specific depreciation
 	Advanced models such as Random Forest, Gradient Boosting, and XGBoost can also be compared with Linear Regression.
 
-📁 Suggested Repository Structure
+## **📁 Suggested Repository Structure**
 
 two-wheeler-resale-value-prediction/
 │
@@ -175,7 +175,7 @@ two-wheeler-resale-value-prediction/
 │   └── Two_Wheeler_Resale_Value_Case_Study.pptx
 └── requirements.txt
 
-**▶️ How to Run**
+## **▶️ How to Run**
 
 Google Colab
 Open the project notebook in Google Colab.
@@ -183,7 +183,7 @@ Upload the dataset when prompted.
 Run the notebook cells sequentially.
 Review the generated visualizations, predictions, and evaluation metrics.
 
-**👥 Project Information**
+## **👥 Project Information**
 
 Project: Predicting Two-Wheeler Resale Value Using Machine Learning
 Domain: Automotive / Used Vehicle Marketplace
@@ -191,6 +191,6 @@ Task: Regression
 Primary Model: Multiple Linear Regression
 Target Variable: selling_price
 
-📜 Conclusion
+## **📜 Conclusion**
 
 The project demonstrates how machine learning can estimate used two-wheeler resale values from historical marketplace data. The Multiple Linear Regression model achieved an R² score of 0.807, showing that the selected vehicle and pricing attributes provide substantial predictive information. The approach provides an interpretable foundation for data-driven pricing recommendations and can be enhanced with richer vehicle-condition and market-demand features.
